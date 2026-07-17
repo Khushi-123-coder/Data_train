@@ -36,3 +36,17 @@ The workflow isolates tracking metadata and processes input arrays using a modul
 *   **Target Array:** `OrderStatus`
 
 ### 2. Operational Flowchart
+Raw CSV Dataset
+│
+├──> Drop Missing Targets/Meta Records
+├──> Train-Test Split (80/20 Stratified Split)
+│
+└──> ColumnTransformer Preprocessing
+├──> Numeric: Median Imputer ──> StandardScaler
+└──> Categorical: Mode Imputer ──> OneHotEncoder
+│
+▼
+RandomForestClassifier (150 Trees, Balanced Weights)
+│
+▼
+Predictions & Automated Output Generation
