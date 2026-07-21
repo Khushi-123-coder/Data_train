@@ -36,14 +36,4 @@ The workflow isolates tracking metadata and processes input arrays using a modul
 *   **Target Array:** `OrderStatus`
 
 
-======================================================================
-                     FINAL PRECISION SCOREBOARD
-======================================================================
-Individual Target Category Precisions:
- • Precision for 'Cancelled   ': 89.50%
- • Precision for 'Delivered   ': 92.10%
- • Precision for 'Pending     ': 85.40%
-----------------------------------------------------------------------
-Unified Global Macro Precision:     89.00%
-Unified Global Weighted Precision:  89.33%
-======================================================================
+
